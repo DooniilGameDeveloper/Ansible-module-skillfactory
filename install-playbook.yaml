@@ -1,0 +1,11 @@
+- hosts: Iakimchuk
+  tasks:
+    - name: Installing packages cmatrix, cowsay and sl
+      sudo: yes
+      apt: 
+        pkg:
+          - cmatrix
+          - cowsay
+          - sl
+        state: latest
+        update_cache: true
